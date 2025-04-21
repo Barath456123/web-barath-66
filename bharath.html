@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB TECHNOLOGY BHARATH</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        nav {
+            background-color: #0066cc;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+            color: #ffd700;
+        }
+        .content {
+            padding: 30px;
+        }
+        .section {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+        .download-btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        .download-btn:hover {
+            background-color: #218838;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 25px;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #333;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #eef6ff;
+        }
+        pre {
+            background-color: #e8f0fe;
+            padding: 15px;
+            border-left: 5px solid #0066cc;
+            overflow-x: auto;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        ul {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#" onclick="showSection('home')">Home</a>
+        <a href="#" onclick="showSection('syllabus')">Syllabus</a>
+        <a href="#" onclick="showSection('theory')">Theory Notes</a>
+        <a href="#" onclick="showSection('lab')">Lab Manuals</a>
+        <a href="#" onclick="showSection('references')">References</a>
+    </nav>
+
+    <div class="content">
+
+        <div id="home" class="section active">
+            <h1>WEB TECHNOLOGY BHARATH</h1>
+            <h2>Number of Chapters</h2>
+            <p>There are 10 comprehensive chapters covering all essential topics of Web Development and Backend Systems.</p>
+            <h2>Chapters:</h2>
+            <ul>
+                <li>Module 1: INTRODUCTION TO HTML & CSS</li>
+                <li>Module 2: ADVANCED HTML5</li>
+                <li>Module 3: XML & JSON</li>
+                <li>Module 4: JAVASCRIPT FUNDAMENTALS</li>
+                <li>Module 5: PHP & SERVER-SIDE PROGRAMMING</li>
+                <li>Module 6: MYSQL DATABASE INTEGRATION</li>
+                <li>Module 7: INTRODUCTION TO NODE.JS</li>
+                <li>Module 8: API CREATION & CONSUMPTION</li>
+                <li>Module 9: RESPONSIVE WEB DESIGN</li>
+                <li>Module 10: WEB SECURITY BASICS</li>
+            </ul>
+            <h2>Benefits</h2>
+            <ul>
+                <li>Master Frontend and Backend Technologies</li>
+                <li>Build Full-stack Web Applications</li>
+                <li>Work with Databases and APIs</li>
+                <li>Learn how to deploy secure and scalable websites</li>
+                <li>Boost Career with High-demand Web Skills</li>
+                <li>Understand Browser and Server Communication</li>
+                <li>Get Hands-on Practice with Real-world Projects</li>
+                <li>Enhance Creativity through Design and Development</li>
+            </ul>
+        </div>
+
+        <div id="syllabus" class="section">
+            <h1>Syllabus</h1>
+            <p><strong>Prerequisite:</strong> Basic Computer Knowledge, Networks, Database Management Systems.</p>
+            <h2>Course Objectives:</h2>
+            <ul>
+                <li>To build strong skills in Frontend and Backend Web Technologies</li>
+                <li>To learn how modern websites and web apps are built</li>
+                <li>To understand security, optimization, and database interaction</li>
+            </ul>
+            <h2>Modules:</h2>
+            <table>
+                <tr>
+                    <th>Module</th>
+                    <th>Content</th>
+                    <th>Hours</th>
+                </tr>
+                <tr>
+                    <td>1. INTRODUCTION TO HTML & CSS</td>
+                    <td>Basics of HTML, CSS styling, Document structure, Forms, Lists</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>2. ADVANCED HTML5</td>
+                    <td>New elements, Audio/Video integration, Canvas, Local Storage</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>3. XML & JSON</td>
+                    <td>Data Representation, XML Structure, JSON Syntax, Parsing JSON</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>4. JAVASCRIPT FUNDAMENTALS</td>
+                    <td>DOM Manipulation, Event Handling, Functions, Objects</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>5. PHP & SERVER-SIDE PROGRAMMING</td>
+                    <td>PHP Syntax, Sessions, Forms, File Handling</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>6. MYSQL DATABASE INTEGRATION</td>
+                    <td>Database Connection, CRUD Operations, Queries</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>7. INTRODUCTION TO NODE.JS</td>
+                    <td>Server-side JavaScript, Creating Servers, NPM Modules</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>8. API CREATION & CONSUMPTION</td>
+                    <td>RESTful APIs, Fetch API, Axios, Authentication Basics</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>9. RESPONSIVE WEB DESIGN</td>
+                    <td>Media Queries, Mobile-first Approach, Frameworks (Bootstrap)</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>10. WEB SECURITY BASICS</td>
+                    <td>OWASP Top 10, SQL Injection, Cross-Site Scripting, HTTPS</td>
+                    <td>5</td>
+                </tr>
+            </table>
+            <p><strong>Total:</strong> 50 Hours</p>
+        </div>
+
+        <div id="theory" class="section">
+            <h1>Theory Notes</h1>
+            <p>You can view the HTML Theory Notes from the link below:</p>
+            <a class="download-btn" href="https://www.w3schools.com/html/html_intro.asp" target="_blank">Open HTML Theory Notes</a>
+        </div>
+
+        <div id="lab" class="section">
+            <h1>Lab Manuals</h1>
+            <p>Sample HTML Lab Programs:</p>
+
+            <h3>Program 1: Basic HTML Page</h3>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My First HTML Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello, World!&lt;/h1&gt;
+    &lt;p&gt;This is a simple HTML page.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            </pre>
+
+            <h3>Program 2: HTML Table</h3>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Simple Table&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;table border="1"&gt;
+        &lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Age&lt;/th&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;John&lt;/td&gt;&lt;td&gt;25&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;Jane&lt;/td&gt;&lt;td&gt;22&lt;/td&gt;&lt;/tr&gt;
+    &lt;/table&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            </pre>
+
+            <h3>Program 3: HTML Form</h3>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Simple Form&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;form&gt;
+        Name: &lt;input type="text" name="name"&gt;&lt;br&gt;&lt;br&gt;
+        Email: &lt;input type="email" name="email"&gt;&lt;br&gt;&lt;br&gt;
+        &lt;input type="submit" value="Submit"&gt;
+    &lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            </pre>
+        </div>
+
+        <div id="references" class="section">
+            <h1>References</h1>
+            <ul>
+                <li><a href="https://www.pearson.com/en-us/subject-catalog/p/programming-the-internet-xml-and-web-technologies/P200000005337/9780135151134" target="_blank">Deitel & Deitel - XML How to Program</a></li>
+                <li><a href="https://www.dreamtechpress.com/product/web-technologies-black-book/" target="_blank">Web Technologies Black Book - Dreamtech Press</a></li>
+                <li><a href="https://www.wiley.com/en-in/Web+Programming%3A+Building+Internet+Applications%2C+3rd+Edition-p-9780470017753" target="_blank">Chris Bates - Web Programming</a></li>
+                <li><a href="https://www.pearson.com/store/p/ajax-javascript-and-php/P100000621693" target="_blank">Sams Teach Yourself Ajax, JavaScript and PHP</a></li>
+                <li><a href="https://www.amazon.in/Web-Technologies-Achut-Godbole/dp/0070637046" target="_blank">Web Technologies - Godbole & Kahate</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            var sections = document.getElementsByClassName('section');
+            for (var i = 0; i < sections.length; i++) {
+                sections[i].classList.remove('active');
+            }
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+
+</body>
+</html>
